@@ -1,0 +1,9 @@
+<paste log output from Kubernetes-mediated prediction, here>
+
+
+NAME                  READY   STATUS            RESTARTS   AGE
+app-c6f9ddb47-x2jhv   0/1     ContainerCreating   0          0s
+app-c6f9ddb47-x2jhv   1/1     Running             0          3m11s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
