@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/JohnOMDev/devops-engineer-with-Docker-Circleci-and-Kubernete.svg?style=svg)](https://circleci.com/gh/JohnOMDev/devops-engineer-with-Docker-Circleci-and-Kubernete)
 
 ## Project Overview
 
