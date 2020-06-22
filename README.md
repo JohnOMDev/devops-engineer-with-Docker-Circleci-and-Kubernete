@@ -2,9 +2,7 @@
 
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API.
-
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+Serverless project that uses Docker, circleci and Kubernetes skills acquired in the Udacity nanodegree course to operationalize a Machine Learning Microservice API. Project was developed, tested and pushed to production from my local machine
 
 ### Project Tasks
 
@@ -17,26 +15,25 @@ Your project goal is to operationalize this working, machine learning microservi
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
-
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
-
----
 
 ## Setup the Environment
+*  Clone the project repository `git clone https://github.com/udacity/DevOps_Microservices.git`
+* Create a virtualenv
+* Activate a virtual environment
+* Installing dependencies via project Makefile : using 'make install'
+* Lint Project files with `make lint`
 
-* Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
+##  Special Libraries must install before starting
+* Docker - to Containerize your application
+* Hadolint - to Lint the Dockerfile
+* Virtual machine
+* Kubernetes
+* Minikube
 
-### Running `app.py`
+### Running the project
 
 1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
-
-### Kubernetes Steps
-
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+2. Run the Docker file:  `./run_docker.sh`
+3. Run the Kubernetes file:  `./run_kubernetes.sh`
+4. Run the make prediction file  `make_prediction.sh`
+5. Run the Upload docker file:  `./upload_docker.sh`
